@@ -11,9 +11,8 @@ export async function fromNetWork(req: RequestInfo, timeout: number): Promise<Re
 
 
 export async function fromCache(req: RequestInfo, cacheName: string): Promise<Response | undefined> {
-  return new Promise((resolve, reject) => {
-    caches.open(cacheName)
-          .then(cache => cache.match(req)
-                              .then(matching => matching ? resolve(matching) : reject(), () => reject()));
-  });
+  return caches.open(cacheName)
+               .then(cache => {
+                 return cache.match(req);
+               });
 }
