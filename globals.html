@@ -72,6 +72,8 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-function"><a href="globals.html#asyncabc" class="tsd-kind-icon">asyncABC</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#double" class="tsd-kind-icon">double</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#fromcache" class="tsd-kind-icon">from<wbr>Cache</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#fromnetwork" class="tsd-kind-icon">from<wbr>Net<wbr>Work</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#power" class="tsd-kind-icon">power</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#sha256" class="tsd-kind-icon">sha256</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#sha256native" class="tsd-kind-icon">sha256<wbr>Native</a></li>
@@ -92,7 +94,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/56fa4e0/src/lib/async.ts#L20">lib/async.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/async.ts#L20">lib/async.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -123,7 +125,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/56fa4e0/src/lib/number.ts#L22">lib/number.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/number.ts#L22">lib/number.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -159,6 +161,58 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="fromcache" class="tsd-anchor"></a>
+					<h3>from<wbr>Cache</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Cache<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestInfo</span>, cacheName<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/caching/network-or-cache.ts#L13">lib/caching/network-or-cache.ts:13</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">RequestInfo</span></h5>
+								</li>
+								<li>
+									<h5>cacheName: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="fromnetwork" class="tsd-anchor"></a>
+					<h3>from<wbr>Net<wbr>Work</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">from<wbr>Net<wbr>Work<span class="tsd-signature-symbol">(</span>req<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RequestInfo</span>, timeout<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/caching/network-or-cache.ts#L1">lib/caching/network-or-cache.ts:1</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>req: <span class="tsd-signature-type">RequestInfo</span></h5>
+								</li>
+								<li>
+									<h5>timeout: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Response</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="power" class="tsd-anchor"></a>
 					<h3>power</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -168,7 +222,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/56fa4e0/src/lib/number.ts#L43">lib/number.ts:43</a></li>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/number.ts#L43">lib/number.ts:43</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -207,7 +261,7 @@ asyncABC().then(<span class="hljs-built_in">console</span>.log);
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/56fa4e0/src/lib/hash.ts#L16">lib/hash.ts:16</a></li>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/hash.ts#L16">lib/hash.ts:16</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -240,7 +294,7 @@ sha256(<span class="hljs-string">'test'</span>)
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/56fa4e0/src/lib/hash.ts#L34">lib/hash.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/vjcspy/iz-sw-helper/blob/4b7aa56/src/lib/hash.ts#L34">lib/hash.ts:34</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -280,6 +334,12 @@ sha256(<span class="hljs-string">'test'</span>)
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#double" class="tsd-kind-icon">double</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#fromcache" class="tsd-kind-icon">from<wbr>Cache</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#fromnetwork" class="tsd-kind-icon">from<wbr>Net<wbr>Work</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#power" class="tsd-kind-icon">power</a>
