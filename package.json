@@ -1,6 +1,6 @@
 {
   "name": "iz-sw-helper",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "service worker best practices and library helper",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
@@ -31,7 +31,7 @@
     "version": "standard-version",
     "reset": "git clean -dfx && git reset --hard && npm i",
     "clean": "trash build test",
-    "all": "run-s reset test cov:check doc:html",
+    "all": "run-s doc:html",
     "prepare-release": "run-s all version doc:publish"
   },
   "scripts-info": {
